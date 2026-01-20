@@ -3,8 +3,7 @@ import React from 'react'
 function page() {
   return (
     <div>
-     
-      <h1>Hi how are you this is a nextjs course akash </h1>
+      hii this is my team 
     </div>
   )
 }
