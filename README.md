@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## what is folder structure in the nextjs_app 
 
-## Getting Started
+layout.js - this file is a special file that is used to wrap the pages and components with a shared structure 
 
-First, run the development server:
+## routing 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. create folder in app that folder name is a route for in website and inside this folder create page.js (file name should be anhything else )
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## nested routing
+just create a folder inside a folder and create page.jsx
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## nested layout 
+just create a file inside the folder and name it layout.js and write the same code as layout.js in the root folder
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## link or anchor tag 
+instace of a tag use <Link href="/">Home</Link>
 
-## Learn More
+## Route group  
+it is a special file that is used to group the routes together that does not affect the url  like admin user auth 
+group (admin)
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## global css
+using tailwind it is going to apply on all the page in the app
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## for module.css 
+create a file inside the folder and name it style.module.css
+import that file in the page and to apply the css use className={style.common_header(classname)}
 
-## Deploy on Vercel
+## image component 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+import Image from 'next/image'
+<Image src="/vercel.svg" alt="Vercel Logo" width={100} height={24} />
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+if we use image tag then in src we can directly enter the name of file in public folder no need to import the images 
+2. next js automatically compress the image and change into webp format 
+3. we can also set the quality  default 75%and priority of image 
+4. next js also supports lazy loading and show blur image when image is loading placeholder="blur"
