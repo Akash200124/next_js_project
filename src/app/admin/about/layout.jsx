@@ -1,6 +1,6 @@
 export default function AboutLayout({ children }) {
   return (
-    <html>
+    <html lang="eng">
       <body
       >
          <h2>this is a about page  layout</h2>
