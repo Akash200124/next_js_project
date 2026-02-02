@@ -1,20 +1,19 @@
-import React from 'react'
+"use client";
 
-const postid = async (props) => {
+import React, { use } from 'react'
 
-    // console.log(props)
+const postid =  (props) => {
 
-    const username = await props.params
+    // console.log(props) 
+    // use this function to get the params in client server 
 
-    console.log("user name is => ",username)
+    const username = use(props.params)
+
+    console.log("user name is => ", username)
     return (
         <div>
-            this is a dyamic user page 
-            
-            {
-                
-                username.postid
-            }
+
+            user : {username.usrname} and post: {username.postid}
         </div>
     )
 }
