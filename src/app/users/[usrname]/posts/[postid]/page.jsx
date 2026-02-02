@@ -1,6 +1,6 @@
 import React from 'react'
 
-const page = async (props) => {
+const postid = async (props) => {
 
     // console.log(props)
 
@@ -12,10 +12,11 @@ const page = async (props) => {
             this is a dyamic user page 
             
             {
-                username.usrname
+                
+                username.postid
             }
         </div>
     )
 }
 
-export default page
+export default postid

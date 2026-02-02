@@ -60,4 +60,4 @@ export const metadata ={
 
 # dynamic routes 
 create folder and make dynamic vlaues in square bracket like [id].jsx
-
+- dynamic routing can only be used in server components but you can use this in client components also
